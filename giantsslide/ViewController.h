@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageview;
+- (IBAction)choice:(id)sender;
 
 @end
 

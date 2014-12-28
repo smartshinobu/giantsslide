@@ -14,6 +14,7 @@
 		6B9868F21A4F95310053C2E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B9868F11A4F95310053C2E3 /* Images.xcassets */; };
 		6B9868F51A4F95310053C2E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9868F31A4F95310053C2E3 /* LaunchScreen.xib */; };
 		6B9869011A4F95310053C2E3 /* giantsslideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9869001A4F95310053C2E3 /* giantsslideTests.m */; };
+		6B98690C1A4F98860053C2E3 /* Webreturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B98690B1A4F98860053C2E3 /* Webreturn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		6B9868FA1A4F95310053C2E3 /* giantsslideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = giantsslideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9868FF1A4F95310053C2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B9869001A4F95310053C2E3 /* giantsslideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = giantsslideTests.m; sourceTree = "<group>"; };
+		6B98690A1A4F98760053C2E3 /* Webreturn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Webreturn.h; sourceTree = "<group>"; };
+		6B98690B1A4F98860053C2E3 /* Webreturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Webreturn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		6B9868E31A4F95310053C2E3 /* giantsslide */ = {
 			isa = PBXGroup;
 			children = (
+				6B98690A1A4F98760053C2E3 /* Webreturn.h */,
+				6B98690B1A4F98860053C2E3 /* Webreturn.m */,
 				6B9868E81A4F95310053C2E3 /* AppDelegate.h */,
 				6B9868E91A4F95310053C2E3 /* AppDelegate.m */,
 				6B9868EB1A4F95310053C2E3 /* ViewController.h */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B98690C1A4F98860053C2E3 /* Webreturn.m in Sources */,
 				6B9868ED1A4F95310053C2E3 /* ViewController.m in Sources */,
 				6B9868EA1A4F95310053C2E3 /* AppDelegate.m in Sources */,
 				6B9868E71A4F95310053C2E3 /* main.m in Sources */,
