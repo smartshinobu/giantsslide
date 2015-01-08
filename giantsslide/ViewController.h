@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageview;
 - (IBAction)choice:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 

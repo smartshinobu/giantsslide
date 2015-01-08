@@ -25,6 +25,8 @@
 
 - (void)viewDidLoad {
     tag = @"読売ジャイアンツ";
+    self.view.backgroundColor = [UIColor orangeColor];
+    self.label.hidden = YES;
     playary = [NSArray arrayWithObjects:@"澤村拓一",@"大竹寛",@"杉内俊哉",@"菅野智之",@"内海哲也",@"宮國椋丞",@"西村健太朗",@"山口鉄也",@"小林誠司",@"阿部慎之助",@"井端弘和",@"坂本勇人",@"片岡治大",@"村田修一",@"長野久義",@"亀井善行",@"鈴木尚広",@"高橋由伸",@"松本哲也",@"橋本到",@"矢野謙次", @"ジャビット",nil];
     [self slidebefore];
     [super viewDidLoad];
@@ -53,6 +55,7 @@
         NSDictionary *imgdic = [[infodic objectForKey:@"images"] objectForKey:@"standard_resolution"];
         NSString *imgurl = [imgdic objectForKey:@"url"];
         self.imageview.image = [Webreturn WebImage:imgurl];
+        self.label.text = [[infodic objectForKey:@"caption"] objectForKey:@"text"];
     }
     if (count == [array count] - 1) {
         count = 0;
@@ -75,6 +78,7 @@
 }
 
 -(void)slidebefore{
+    self.label.hidden = NO;
     urlstr = @"https://api.instagram.com/v1/tags/tagname/media/recent?access_token=1546466429.b528a28.81831577fd6244249f0b0bd0a0ef1741";
     NSString *entag = [tag stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet alphanumericCharacterSet]];
     NSString *starturl = [urlstr stringByReplacingOccurrencesOfString:@"tagname" withString:entag];
